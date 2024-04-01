@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.mdiv
+		{
+			height: 200px;
+			width: 600px;
+			border: 4px solid black;
+			margin-top: 100px;
+			margin-left: 200px;
+			background-color: lightsalmon;
+			border-radius: 60px ;
+			box-shadow: 20px 20px 40px gray;
+		}
+		#dt{
+			color: blue;
+			font-family: algebrian;
+			font-size: 100px;
+			-webkit-text-stroke: 2px royalblue;
+			text-align: center;
+			margin-top: 50px;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="mdiv">
+
+	<h1 id= "dt">00/00/0000</h1>
+   <script type="text/javascript">
+	let dt= document.getElementById("dt");
+
+	let dat=new Date();
+	console.log(dat);
+
+	let day=dat.getDate();
+	let mnt= dat.getMonth()+1;
+	let yr= dat.getFullYear();
+
+	
+	dt.innerHTML=`${day}/${mnt}/${yr}`;
+
+		
+	</script>
+	</div>
+</script>
+</body>
+</html>

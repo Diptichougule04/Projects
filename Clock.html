@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.mdiv
+		{
+			height: 200px;
+			width: 600px;
+			padding-top: 40px;
+			border: 4px solid black;
+			margin-top: 140px;
+			margin-left: 250px;
+			background-color: lightskyblue;
+			border-radius: 60px ;
+			box-shadow: 20px 20px 40px gray;
+			text-align: center;
+			font-size: 60px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="mdiv">
+<script type="text/javascript">
+
+	let dt= new Date();
+	let dy=(dt.getDay());
+
+	switch(dy)
+	{
+	    case 0: document.write("SUNDAY");break;
+		case 1: document.write("MONDAY");break;
+        case 2: document.write("TUESDAY");break;
+        case 3: document.write("WEDNESDAY");break;        	
+       	case 4: document.write("THURSDAY");break;
+       	case 5: document.write("FRIDAY");break;
+       	case 6: document.write("SATURDAY");break;
+	}
+
+</script>
+</div>
+</body>
+</html>
